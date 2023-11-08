@@ -21,12 +21,9 @@ const NavBar = () => {
                     }>Blog</Link></li>
                         <li className="text-[#0f1113] text-base  font-bold"><Link to='/allfood' className={({ isActive }) => isActive ? 'btn' : 'btn bg-[#100935e7]' 
                     }>All food</Link></li>
-                        <li className="text-[#0f1113] text-base  font-bold"><Link to='/addfood' className={({ isActive }) => isActive ? 'btn' : 'btn bg-[#100935e7]' 
-                    }>Add food</Link></li>
-                        <li className="text-[#0f1113] text-base  font-bold"><Link to='/myaddedfood' className={({ isActive }) => isActive ? 'btn' : 'btn bg-[#100935e7]' 
-                    }>My Added food</Link></li>
-                        <li className="text-[#0f1113] text-base  font-bold"><Link to='/bookings' className={({ isActive }) => isActive ? 'btn' : 'btn bg-[#100935e7]' 
-                    }>My Order</Link></li>
+                       
+                        
+                        
 
 
                            
