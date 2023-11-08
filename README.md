@@ -8,4 +8,4 @@
 * 404 error page.
 
 
-<!-- hghghghg rthbtrh-th  er        ->
+<!-- hghghghg rthbt      ->
