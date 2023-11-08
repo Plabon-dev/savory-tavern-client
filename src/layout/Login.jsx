@@ -39,7 +39,7 @@ const Login = () => {
 
     return (
         <div>
-            <div className="space-y-10 py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://wallpapercave.com/wp/wp1874160.jpg)' }}>
+            <div className="space-y-10 py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://c1.wallpaperflare.com/path/935/943/593/table-wood-fresh-organic-57d442b61fe99aa1441807ba19045098.jpg)' }}>
                 <div className="relative flex items-center flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                     <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                         Log In

@@ -8,7 +8,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className="navbar space-y-4 h-32 flex flex-col md:flex-row">
+            <div className="navbar space-y-4 h-32 flex flex-col md:flex-row mb-4">
                 <div className="navbar-start mr-20 md:mr-0 ">
                     <div className="dropdown ">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -71,9 +71,9 @@ const NavBar = () => {
                         user ?
                     
                             <details className="dropdown">
-                            <summary className="m-1 avatar"><div className="avatar">
-                              <div className="w-8 md:w-12 rounded-full"><img src={user.photoURL}/></div></div></summary>
+                            <summary className="m-1 avatar btn">User Profile</summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                            <li className="text-[#0f1113] text-base  font-bold"><div className="flex"><div className="avatar"> <div className="w-14 rounded-full"><img src={user.photoURL}/></div>{user?.displayName}</div></div></li>
                             <li className="text-[#0f1113] text-base  font-bold"><Link to='/addfood' className={({ isActive }) => isActive ? 'btn' : 'btn bg-[#100935e7]' 
                     }>Add food</Link></li>
                               <li className="text-[#0f1113] text-base  font-bold"><Link to='/bookings' className={({ isActive }) => isActive ? 'btn' : 'btn bg-[#100935e7]' 
