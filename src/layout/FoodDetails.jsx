@@ -47,40 +47,7 @@ const FoodDetails = () => {
                                    </Link>
                                   </div>
 
-                            {/* {
-                                user?.email !== singleFood?.AddedBy ? 
-                              
-                                    
-                                    <div>
-                                    <Link to={`/foodpurchase/${_id}`} className="btn-ghost btn-block mt-10 md:mt-16 inline-block rounded btn px-12 py-3 text-sm font-medium text-emerald-600 border-emerald-600 border-[2px] transition hover:bg-emerald-700 focus:outline-none focus:ring hover:text-white focus:ring-yellow-400"
-                                   >
-                                       Add to Cart
-                                   </Link>
-                                  </div>
-                                    :
-                                    <div>
-                                    <Link onClick={()=>document.getElementById('my_modal_5').showModal()}
-                                        href="#"
-                                        className="btn-error btn-block mt-10 md:mt-16 inline-block rounded btn px-12 py-3 text-sm font-medium text-gray-100 border-emerald-600 border-[2px] transition  focus:outline-none focus:ring hover:text-white focus:ring-yellow-400"
-                                    >
-                                        Cannot Add to Cart
-                                    </Link>
-                                    <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                                        <div className="modal-box max-h-full">
-                                            <img src="https://www.desicomments.com/wp-content/uploads/2022/03/sorry-pics-for-love5.jpg" alt="" />
-                                            <h3 className="font-bold text-xl mt-5 text-red-500">This food item cannot be added to Cart!</h3>
-                                            
-                                            <div className="modal-action">
-                                                <form method="dialog">
-                                                    
-                                                    <button className="btn">Close</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </dialog>
-                                </div>
-                                
-                            } */}
+                            
                         </div>
                     </div>
                 </div>
