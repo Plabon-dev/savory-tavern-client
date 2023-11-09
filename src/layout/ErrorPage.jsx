@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PageTitle from "../components/PageTitle";
 
 const ErrorPage = () => {
     return (
@@ -8,7 +9,9 @@ const ErrorPage = () => {
 */}
 
             <div className="grid h-screen px-4 bg-white place-content-center">
+            <PageTitle title='Error'></PageTitle>
                 <div className="text-center">
+
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 1024 768"

@@ -70,7 +70,7 @@ const NavBar = () => {
                             <details className="dropdown">
                             <summary className="m-1 avatar btn border-indigo-950 btn-ghost">User Profile</summary>
                             <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                            <li className="text-[#0f1113] text-base  font-bold"><div className="flex"><div className="avatar"> <div className="w-14 rounded-full"><img src={user.photoURL}/></div>{user?.displayName}</div></div></li>
+                            <li className="text-[#0f1113] text-base  font-bold"><div className="flex"><div className="avatar"> <div className="w-14 rounded-full mr-2"><img className="" src={user.photoURL}/></div>{user?.displayName}</div></div></li>
                             <li className="text-[#0f1113] text-base  font-bold"><Link to='/addfood' className={({ isActive }) => isActive ? 'btn' : 'btn bg-[#100935e7]' 
                     }>Add food</Link></li>
                               <li className="text-[#0f1113] text-base  font-bold"><Link to='/bookings' className={({ isActive }) => isActive ? 'btn' : 'btn bg-[#100935e7]' 

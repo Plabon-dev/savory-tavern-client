@@ -26,7 +26,7 @@ const router = createBrowserRouter([
         {
             path: "/",
             element: <Home></Home>,
-            loader: () => fetch('http://localhost:5000/bookings')
+            loader: () => fetch('https://savory-tavern-server.vercel.app/bookings')
         },
         {
             path: "/login",
@@ -46,27 +46,27 @@ const router = createBrowserRouter([
         },
         {
             path: "/addfood",
-            element: <AddFood></AddFood>,
+            element: <PrivateRoute><AddFood></AddFood></PrivateRoute>,
         },
         {
             path: "/updatefood/:id",
             element: <UpdateFood></UpdateFood>,
-            loader: ({params}) => fetch(`http://localhost:5000/allfoods/${params.id}`)
+            loader: ({params}) => fetch(`https://savory-tavern-server.vercel.app/allfoods/${params.id}`)
         },
         {
             path: "/foodpurchase/:id",
             element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>,
-            loader: ({params}) => fetch(`http://localhost:5000/allfoods/${params.id}`)
+            loader: ({params}) => fetch(`https://savory-tavern-server.vercel.app/allfoods/${params.id}`)
         },
         {
             path: "/myaddedfood",
-            element: <MyAddedFood></MyAddedFood>,
-            loader: () => fetch('http://localhost:5000/allfoods')
+            element: <PrivateRoute><MyAddedFood></MyAddedFood></PrivateRoute>,
+            loader: () => fetch('https://savory-tavern-server.vercel.app/allfoods')
         },
         {
             path: "/allfood/:id",
             element: <FoodDetails></FoodDetails>,
-            loader: ({params}) => fetch(`http://localhost:5000/allfood/${params.id}`)
+            loader: ({params}) => fetch(`https://savory-tavern-server.vercel.app/allfood/${params.id}`)
         },
         {
             path: "bookings",

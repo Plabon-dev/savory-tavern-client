@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import PageTitle from "../components/PageTitle";
 
 
 const Login = () => {
@@ -39,6 +40,7 @@ const Login = () => {
 
     return (
         <div>
+            <PageTitle title='Savory Tavern | Log In'></PageTitle>
             <div className="space-y-10 py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(https://c1.wallpaperflare.com/path/935/943/593/table-wood-fresh-organic-57d442b61fe99aa1441807ba19045098.jpg)' }}>
                 <div className="relative flex items-center flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                     <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
@@ -122,10 +124,10 @@ const Login = () => {
                             <img onClick={handleGoogle} className="w-10 pr-2" src="https://freesvg.org/img/1534129544.png" alt="" />
                             
                         </div></div>
-                        <p className="mt-4 block text-center font-sans text-base font-normal leading-relaxed text-white antialiased">
+                        <p className="mt-4 block text-center font-sans  text-base font-normal leading-relaxed antialiased">
                             Do not have an account?
 
-                            <Link className="font-bold text-red-600 transition-colors hover:text-blue-700 text-xl" to='/register'>Register</Link>
+                            <Link className="font-bold text-violet-800 transition-colors hover:text-blue-700 text-xl" to='/register'>Register</Link>
                         </p>
                     
                 </div>

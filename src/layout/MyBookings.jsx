@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import PurchaseCard from './../components/PurchaseCard';
+import PageTitle from "../components/PageTitle";
 
 const MyBookings = () => {
 
@@ -9,7 +10,7 @@ const MyBookings = () => {
     const [bookings, setbookings] = useState([])
     console.log(email);
 
-    const url = `http://localhost:5000/bookings?email=${email}`;
+    const url = `https://savory-tavern-server.vercel.app/bookings?email=${email}`;
     useEffect(() =>{
         fetch(url)
         .then(res => res.json())
@@ -20,6 +21,7 @@ const MyBookings = () => {
     
     return (
         <div>
+            <PageTitle title='Savory Tavern | My Order'></PageTitle>
             <h2 className="text-3xl font-semibold text-center mt-16">
                 My Orders
             </h2>

@@ -20,7 +20,7 @@ const PurchaseCard = ({food, setbookings, bookings}) => {
           }).then((result) => {
             if (result.isConfirmed) {
            
-                fetch(`http://localhost:5000/bookings/${_id}`, {
+                fetch(`https://savory-tavern-server.vercel.app/bookings/${_id}`, {
                     method: 'DELETE'
                 }) 
                 .then(res => res.json())

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import PageTitle from "../components/PageTitle";
 
 const FoodDetails = () => {
     const singleFood = useLoaderData();
@@ -9,6 +10,7 @@ const FoodDetails = () => {
 
     return (
         <div>
+            <PageTitle title='Savory Tavern | Food Details'></PageTitle>
             <h2 className="text-xl md:text-4xl font-bold text-center my-10">Delve into the Exquisite Culinary World of {Name}</h2>
 
 

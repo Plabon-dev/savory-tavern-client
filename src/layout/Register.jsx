@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import PageTitle from "../components/PageTitle";
 
 
 const Register = () => {
@@ -26,6 +27,7 @@ const Register = () => {
 
     return (
         <div>
+            <PageTitle title='Savory Tavern |Register'></PageTitle>
             <div className="space-y-10 py-20" style={{ backgroundImage: 'url(https://c0.wallpaperflare.com/path/37/882/321/blurred-background-bubbles-close-up-droplets-0c28203cbdac1c46a8e5ddd070beae12.jpg)' }}>
                 <div className="relative flex items-center flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
                     <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">

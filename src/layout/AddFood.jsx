@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import Swal from "sweetalert2";
+import PageTitle from "../components/PageTitle";
 
 const AddFood = () => {
 
@@ -21,7 +22,7 @@ const AddFood = () => {
         console.log(newFood);
 
         // send data to the server
-        fetch('http://localhost:5000/allfood', {
+        fetch('https://savory-tavern-server.vercel.app/allfood', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -53,6 +54,7 @@ const AddFood = () => {
 
     return (
         <div>
+            <PageTitle title='Savory Tavern | Add Food'></PageTitle>
             <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/9WLpQ90/wp12956092-restaurant-4k-wallpapers.jpg)' }}>
 
                 <div className="hero-overlay "></div>

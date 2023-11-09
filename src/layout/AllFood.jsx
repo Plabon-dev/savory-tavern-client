@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useContext, useState } from "react";
 import { AuthContext } from './../provider/AuthProvider';
 import FoodCard from "../components/FoodCard";
+import PageTitle from "../components/PageTitle";
 
 
 
@@ -11,7 +12,7 @@ const AllFood = () => {
     const { data: { result, foodCount } } = useQuery({
         queryKey: ["allFood", page],
         queryFn: () =>
-            fetch(`http://localhost:5000/allfood?page=${page}`).then((response) => response.json()),
+            fetch(`https://savory-tavern-server.vercel.app/allfood?page=${page}`).then((response) => response.json()),
         initialData: { result: [], foodCount: 0 },
     });
     const totalPages = Math.ceil(foodCount / 9);
@@ -26,6 +27,7 @@ const AllFood = () => {
 
     return (
         <div>
+            <PageTitle title='Savory Tavern | All Food Items'></PageTitle>
             <div className="my-20 text-center">
                 <h2 className="text-4xl">Discover the World of Flavor at Savory Tavern's Food Items</h2>
 

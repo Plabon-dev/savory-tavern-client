@@ -25,7 +25,7 @@ const UpdateFood = () => {
         console.log(updatedFood);
 
         // send data to the server
-        fetch(`http://localhost:5000/allfoods/${food?._id}`, {
+        fetch(`https://savory-tavern-server.vercel.app/allfoods/${food?._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

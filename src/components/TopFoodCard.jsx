@@ -23,7 +23,7 @@ const TopFoodCard = ({food}) => {
         <p className="text-2xl font-semibold text-green-500">
          {food?.Price}</p>
        <div className="flex justify-end">
-       <Link ><button className='btn text-green-400 border-green-500 hover:text-white hover:bg-green-500 jus  btn-ghost'>See Details</button></Link>
+       <Link><button className='btn text-green-400 border-green-500 hover:text-white hover:bg-green-500 jus  btn-ghost'>See Details</button></Link>
        </div>
          
       </div>

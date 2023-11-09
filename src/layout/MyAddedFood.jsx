@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import AddedFoodCard from "../components/AddedFoodCard";
+import PageTitle from "../components/PageTitle";
 
 
 const MyAddedFood = () => {
@@ -15,6 +16,7 @@ const MyAddedFood = () => {
 
     return (
         <div>
+            <PageTitle title='Added Foods'></PageTitle>
             <h2 className="text-3xl font-semibold text-center mt-14">My Added Food Items </h2>
             <div className="grid grid-cols-1 place-items-center gap-12 mt-10 mb-20">
             {
