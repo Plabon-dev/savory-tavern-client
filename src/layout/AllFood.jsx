@@ -55,7 +55,7 @@ const AllFood = () => {
                         <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
                 </button>
-                {pages.map((item, index) => <button onClick={() => setPage(index)} key={item} className={`inline-flex items-center justify-center w-8 h-8 text-sm font-semibold border rounded ${page == index ? "bg-[#100935e7] text-white" : "text-[#100935e7]"}  shadow-md dark:bg-gray-900 dark:text-violet-400 dark:border-violet-400`}>{index + 1}</button>)}
+                {pages.map((item, index) => <button onClick={() => setPage(index)} key={item} className={`inline-flex items-center justify-center w-8 h-8 text-sm font-semibold border rounded ${page == index ? "bg-[#100935e7] text-white" : "text-[#b1796a]"}  shadow-md dark:bg-gray-900 dark:text-violet-400 dark:border-violet-400`}>{index + 1}</button>)}
 
                 <button onClick={() => { setPage(Math.min(totalPages - 1, page + 1)) }} title="next" type="button" className="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md dark:bg-gray-900 dark:border-gray-800">
                     <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="w-4">

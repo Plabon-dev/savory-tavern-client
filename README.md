@@ -5,8 +5,7 @@
 
 * Food information can be updated as wll as new Food can be added .
 * User can only update his/her added food.   
-* 404 error page.
-
+* 404 error p
 Live Link: https://savory-tavern.web.app/
 
 
